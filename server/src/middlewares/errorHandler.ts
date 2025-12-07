@@ -25,4 +25,8 @@ export const errorHandler = (
     error: "Internal server error",
     details: process.env.NODE_ENV === "development" ? err.message : undefined,
   });
+
+  const hello = () => {
+    console.log("Hello, world!");
+  };
 };
